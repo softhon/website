@@ -4,11 +4,8 @@ import { cn } from "@/lib/utils";
 
 type SectionHeaderProps = {
   eyebrow: string;
-  /** Heading content. Wrap lines in spans with text-muted / text-ink for the two-tone look. */
   title: ReactNode;
-  /** Short paragraph shown to the right of the heading on wide screens. */
   aside?: ReactNode;
-  /** Extra content under the heading, in the same column. */
   children?: ReactNode;
   titleClassName?: string;
 };

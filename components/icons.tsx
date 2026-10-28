@@ -1,8 +1,5 @@
 import type { SVGProps } from "react";
 
-// Icons copied from the design reference (design/index.html). They draw with
-// currentColor, so set the colour with a text-* class on the icon or its parent.
-
 type IconProps = SVGProps<SVGSVGElement>;
 
 function Icon({ children, ...props }: IconProps) {
@@ -66,6 +63,14 @@ export function LightbulbIcon(props: IconProps) {
   return (
     <Icon {...props}>
       <path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.7.5 1.1 1.3 1.1 2.2h5c0-.9.4-1.7 1.1-2.2A6 6 0 0 0 12 3z" />
+    </Icon>
+  );
+}
+
+export function LightbulbSimpleIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M9 18h6M12 3a6 6 0 0 0-3.6 10.8c.7.5 1.1 1.3 1.1 2.2h5c0-.9.4-1.7 1.1-2.2A6 6 0 0 0 12 3z" />
     </Icon>
   );
 }

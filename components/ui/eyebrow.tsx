@@ -17,7 +17,6 @@ const eyebrowVariants = cva(
 
 type EyebrowProps = ComponentProps<"span"> & VariantProps<typeof eyebrowVariants>;
 
-/** Small uppercase label above a section heading, e.g. "Studio". */
 export function Eyebrow({ tone, className, ...props }: EyebrowProps) {
   return <span className={cn(eyebrowVariants({ tone }), className)} {...props} />;
 }

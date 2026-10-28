@@ -2,7 +2,7 @@
 
 @theme inline {
   --font-sans: var(--font-inter-tight), system-ui, sans-serif;
-  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+  --font-mono: var(--font-jetbrains-mono);
 }
 
 @theme {
@@ -18,6 +18,7 @@
   --color-ink-label: #444444;
   --color-body: #555555;
   --color-caption: #5e5e5e;
+  --color-caption-light: #666666;
   --color-muted: #737373;
   --color-muted-strong: #858585;
 
@@ -49,7 +50,7 @@
 
 @layer base {
   body {
-    @apply bg-page font-sans text-ink;
+    @apply bg-page font-sans leading-[normal] text-ink;
   }
 
   a {

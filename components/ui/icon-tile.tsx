@@ -12,7 +12,6 @@ const iconTileVariants = cva("inline-flex flex-none items-center justify-center"
     size: {
       md: "size-10 rounded-xl [&>svg]:size-[18px]",
       lg: "size-12 rounded-[14px] [&>svg]:size-[22px]",
-      // Scales with the surrounding font size, for tiles placed inside headings.
       inline: "size-[0.8em] rounded-[0.22em] align-middle [&>svg]:size-[55%]",
     },
   },
@@ -51,7 +50,6 @@ const iconTileVariants = cva("inline-flex flex-none items-center justify-center"
 
 type IconTileProps = ComponentProps<"span"> & VariantProps<typeof iconTileVariants>;
 
-/** Rounded square holding a single icon from components/icons. */
 export function IconTile({ tone, size, className, ...props }: IconTileProps) {
   return <span className={cn(iconTileVariants({ tone, size }), className)} {...props} />;
 }
