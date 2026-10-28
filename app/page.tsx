@@ -1,4 +1,7 @@
+import { Approach } from "@/components/home/Approach";
 import { Hero } from "@/components/home/Hero";
+import { Philosophy } from "@/components/home/Philosophy";
+import { Products } from "@/components/home/Products";
 import { Services } from "@/components/home/Services";
 import { Studio } from "@/components/home/Studio";
 
@@ -8,6 +11,9 @@ export default function Home() {
       <Hero />
       <Studio />
       <Services />
+      <Approach />
+      <Products />
+      <Philosophy />
     </main>
   );
 }
