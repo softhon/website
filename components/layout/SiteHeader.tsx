@@ -29,15 +29,19 @@ export function SiteHeader() {
         className="flex flex-wrap items-center gap-1.5 rounded-full bg-surface p-[5px] shadow-hairline"
       >
         {navLinks.map(({ label, href }) => (
-          <a key={href} href={href} className="rounded-full px-4 py-2.5 text-[14px] text-ink-soft no-underline">
+          <a
+            key={href}
+            href={href}
+            className="rounded-full px-4 py-2.5 text-[14px] text-ink-soft no-underline transition-colors hover:bg-white hover:text-ink"
+          >
             {label}
           </a>
         ))}
       </nav>
 
-      <a href="#contact" className="flex items-center gap-2 px-1 py-2.5 text-[14px] text-body no-underline">
+      <a href="#contact" className="group flex items-center gap-2 px-1 py-2.5 text-[14px] text-body no-underline">
         Get in <LinkEmphasis>touch</LinkEmphasis>
-        <LongArrowRightIcon className="h-3 w-[22px] text-ink" />
+        <LongArrowRightIcon className="h-3 w-[22px] text-ink transition-transform group-hover:translate-x-1" />
       </a>
     </header>
   );

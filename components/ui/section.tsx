@@ -2,7 +2,7 @@ import type { ComponentProps } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
-const sectionVariants = cva("mx-auto w-full max-w-[1280px]", {
+const sectionVariants = cva("mx-auto w-full max-w-[1280px] scroll-mt-5", {
   variants: {
     variant: {
       plain: "flex flex-col gap-10 px-[clamp(8px,3vw,40px)] pt-18 pb-6",

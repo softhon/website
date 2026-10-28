@@ -28,7 +28,7 @@ export function ProductsShowcase() {
         aria-expanded={open}
         aria-controls="products-panel"
         onClick={() => setOpen((value) => !value)}
-        className="flex min-h-16 w-full cursor-pointer items-center justify-between gap-4 rounded-2xl bg-white py-3.5 pr-3.5 pl-5 text-left shadow-hairline"
+        className="group flex min-h-16 w-full cursor-pointer items-center justify-between gap-4 rounded-2xl bg-white py-3.5 pr-3.5 pl-5 text-left shadow-hairline"
       >
         <span className="flex min-w-0 items-center gap-3.5">
           <IconTile tone="accent">
@@ -39,7 +39,7 @@ export function ProductsShowcase() {
             <span className="font-mono text-[11px] text-caption">In development · first releases coming soon</span>
           </span>
         </span>
-        <span className="inline-flex size-10 flex-none items-center justify-center rounded-full bg-ink text-white">
+        <span className="inline-flex size-10 flex-none items-center justify-center rounded-full bg-ink text-white transition-colors group-hover:bg-[#2b2b2b]">
           {open ? <ChevronUpIcon className="size-4" /> : <ChevronDownIcon className="size-4" />}
         </span>
       </button>
