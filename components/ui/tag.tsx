@@ -7,6 +7,7 @@ const tagVariants = cva("rounded-full px-3 py-1.5 text-[13px]", {
     tone: {
       light: "border border-line-faint bg-white text-ink-soft",
       dark: "bg-ink text-white",
+      night: "border border-night-line bg-night-raised text-white",
     },
   },
   defaultVariants: { tone: "light" },

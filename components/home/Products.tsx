@@ -9,15 +9,12 @@ export function Products() {
         eyebrow="Products"
         title={
           <>
-            <span className="text-muted">Software built to</span>
-            <br />
-            solve real problems.
+            <span className="text-muted">Products</span> from Softhon
           </>
         }
       >
         <p className="max-w-[560px] text-base leading-[1.55] text-body">
-          We develop our own products to address problems we believe are worth solving. Each product starts with
-          an idea, takes shape through engineering and design, and evolves through real-world use.
+          Explore the software we&apos;re building, from early experiments to products available for everyday use.
         </p>
       </SectionHeader>
 

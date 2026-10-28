@@ -1,4 +1,5 @@
 import { ButtonLink, LinkEmphasis } from "@/components/ui/button-link";
+import { CollapsedSpace } from "@/components/ui/collapsed-space";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { Section } from "@/components/ui/section";
 import { CONTACT_EMAIL } from "@/lib/site";
@@ -13,13 +14,15 @@ export function Contact() {
       <Eyebrow className="self-center">Contact</Eyebrow>
 
       <h2 className="max-w-[900px] text-[clamp(36px,5.2vw,72px)] leading-[1.08] font-medium tracking-[-0.045em]">
-        <span className="text-muted-strong">Interested in</span>{" "}
+        <span className="text-muted-strong">Interested in</span>
+        <CollapsedSpace />
         <span
           aria-hidden="true"
           className="mx-[0.06em] inline-flex h-[0.66em] w-[1.3em] items-center justify-end rounded-full bg-accent p-[0.07em] align-middle shadow-[0_8px_20px_-6px_rgba(35,145,238,0.55),inset_0_2px_0_rgba(255,255,255,0.3)]"
         >
           <span className="size-[0.52em] rounded-full bg-white shadow-[0_2px_6px_rgba(0,0,0,0.25)]" />
-        </span>{" "}
+        </span>
+        <CollapsedSpace />
         what we&apos;re building?
       </h2>
 

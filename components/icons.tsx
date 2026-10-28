@@ -145,15 +145,6 @@ export function LayoutIcon(props: IconProps) {
   );
 }
 
-export function RocketIcon(props: IconProps) {
-  return (
-    <Icon {...props}>
-      <path d="M4 20l5-5M14 4c3 0 6 3 6 6l-7 7-6-6 7-7z" />
-      <circle cx="15" cy="9" r="1.5" />
-    </Icon>
-  );
-}
-
 export function PulseIcon(props: IconProps) {
   return (
     <Icon {...props}>

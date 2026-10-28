@@ -1,6 +1,7 @@
 import type { ComponentType, SVGProps } from "react";
 import { CodeIcon, LightbulbIcon, PenIcon, RefreshIcon, SearchIcon } from "@/components/icons";
 import { ButtonLink, LinkEmphasis } from "@/components/ui/button-link";
+import { CollapsedSpace } from "@/components/ui/collapsed-space";
 import { IconTile } from "@/components/ui/icon-tile";
 import { Section } from "@/components/ui/section";
 import { cn } from "@/lib/utils";
@@ -34,14 +35,16 @@ export function Hero() {
         </span>
 
         <h1 className="text-[clamp(44px,6.6vw,92px)] leading-[1.02] font-medium tracking-[-0.045em]">
-          Ideas{" "}
+          Ideas
+          <CollapsedSpace />
           <IconTile
             tone="accent"
             size="inline"
             className="mx-[0.06em] size-[0.78em] -rotate-6 shadow-[0_10px_22px_-6px_rgba(35,145,238,0.55),inset_0_2px_0_rgba(255,255,255,0.35),inset_0_-3px_0_rgba(0,0,0,0.15)] [&>svg]:size-[56%]"
           >
             <LightbulbIcon />
-          </IconTile>{" "}
+          </IconTile>
+          <CollapsedSpace />
           are
           <br />
           <span className="text-muted-strong">just the beginning.</span>
