@@ -8,9 +8,17 @@ type SectionHeaderProps = {
   aside?: ReactNode;
   children?: ReactNode;
   titleClassName?: string;
+  asideClassName?: string;
 };
 
-export function SectionHeader({ eyebrow, title, aside, children, titleClassName }: SectionHeaderProps) {
+export function SectionHeader({
+  eyebrow,
+  title,
+  aside,
+  children,
+  titleClassName,
+  asideClassName,
+}: SectionHeaderProps) {
   return (
     <div className="flex flex-wrap items-end justify-between gap-6">
       <div className="flex min-w-0 flex-[1_1_540px] flex-col gap-[18px]">
@@ -25,7 +33,11 @@ export function SectionHeader({ eyebrow, title, aside, children, titleClassName 
         </h2>
         {children}
       </div>
-      {aside && <p className="flex-[0_1_340px] text-base leading-[1.55] text-body">{aside}</p>}
+      {aside && (
+        <p className={cn("shrink grow-0 basis-[320px] text-base leading-[1.55] text-body", asideClassName)}>
+          {aside}
+        </p>
+      )}
     </div>
   );
 }
