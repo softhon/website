@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter_Tight, JetBrains_Mono } from "next/font/google";
+import { SiteFooter } from "@/components/layout/SiteFooter";
+import { SiteHeader } from "@/components/layout/SiteHeader";
 import "./globals.css";
 
 const interTight = Inter_Tight({
@@ -10,6 +12,8 @@ const interTight = Inter_Tight({
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
+  fallback: ["monospace"],
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {
@@ -26,7 +30,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${interTight.variable} ${jetbrainsMono.variable}`}>
       <body>
-        <div className="flex flex-col gap-5 px-4 pt-5 pb-10">{children}</div>
+        <div className="flex flex-col gap-5 px-4 pt-5 pb-10">
+          <SiteHeader />
+          {children}
+          <SiteFooter />
+        </div>
       </body>
     </html>
   );
