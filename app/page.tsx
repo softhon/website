@@ -1,4 +1,5 @@
 import { Approach } from "@/components/home/Approach";
+import { Contact } from "@/components/home/Contact";
 import { Hero } from "@/components/home/Hero";
 import { Philosophy } from "@/components/home/Philosophy";
 import { Products } from "@/components/home/Products";
@@ -14,6 +15,7 @@ export default function Home() {
       <Approach />
       <Products />
       <Philosophy />
+      <Contact />
     </main>
   );
 }
